@@ -28,7 +28,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              to="/destination"
+              to="/destination/1"
               className={({ isActive }) =>
                 "nav-link" + (isActive ? " selected" : "")
               }
