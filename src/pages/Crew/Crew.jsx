@@ -33,7 +33,7 @@ function Crew() {
             </div>
         </div>
         <div className='DivImage'>
-                <img src="/img/image-douglas-hurley.webp" alt="" />
+                <img src="/img/guy.webp" alt="" />
         </div>
       </div>
     </div>
