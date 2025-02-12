@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 import "./NavBar.scss"
 
 function NavBar() {
@@ -30,7 +30,7 @@ function NavBar() {
             <NavLink
               to="/destination/1"
               className={({ isActive }) =>
-                "nav-link" + (isActive ? " selected" : "")
+                "nav-link" + (isActive || location.pathname.startsWith("/destination/") ? " selected" : "")
               }
             >
               01 DESTINATION
