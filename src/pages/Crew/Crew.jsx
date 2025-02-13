@@ -1,39 +1,58 @@
-import React from 'react';
+import React, { useState } from "react";
 import "./Crew.scss";
-import { GoDotFill } from "react-icons/go";
-import { GoDot } from "react-icons/go";
-import NavBar from '../../components/NavBar/NavBar';
+import { GoDotFill, GoDot } from "react-icons/go";
+import NavBar from "../../components/NavBar/NavBar";
+import crewData from "../../data/crew.json"; // 📥 Importation des données JSON
 
 function Crew() {
+  const [currentIndex, setCurrentIndex] = useState(0); // 🎯 État pour suivre le membre affiché
+
+  // 🔄 Fonction pour changer d’équipier via les dots
+  const handleSelect = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const currentCrewMember = crewData[currentIndex]; // 🔥 Récupération du membre actuel
+
   return (
-    <div className='Crew'>
-      <div className='bg-video'>
+    <div className="Crew">
+      {/* 🎥 Fond vidéo */}
+      <div className="bg-video">
         <video autoPlay loop muted playsInline className="VideoBackground">
           <source src="/video/cover.mp4" type="video/mp4" />
           Votre navigateur ne supporte pas la vidéo.
         </video>
       </div>
-      <div class="Overlay"></div>
+      <div className="Overlay"></div>
       <NavBar />
-      <div className='CrewDivBottom'>
-        <div className='DivText'>
-            <div className='Title'> 
-                <h3><span>02</span> MEET YOUR CREW</h3>
-            </div>
-            <div className='Description'>
-                <h2>COMMANDER</h2>
-                <h1>DOUGLAS HURLEY</h1>
-                <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
-            </div>
-            <div className='menu'>
-                <GoDot />
-                <GoDotFill />
-                <GoDotFill />
-                <GoDotFill />
-            </div>
+
+      {/* 📌 Section affichage équipier */}
+      <div className="CrewDivBottom">
+        <div className="DivText">
+          <div className="Title">
+            <h3>
+              <span>02</span> MEET YOUR CREW
+            </h3>
+          </div>
+          <div className="Description">
+            <h2>{currentCrewMember.title}</h2>
+            <h1>{currentCrewMember.name}</h1>
+            <p>{currentCrewMember.description}</p>
+          </div>
+
+          {/* ⚫ Dots interactifs */}
+          <div className="menu">
+            {crewData.map((_, index) => (
+              <span key={index} onClick={() => handleSelect(index)}>
+                {index === currentIndex ? <GoDotFill /> : <GoDot />}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className='DivImage'>
-                <img src="/img/guy.webp" alt="" />
+
+        {/* 🖼️ Image dynamique */}
+        <div className="DivImage">
+          <img src={currentCrewMember.image_path} alt={currentCrewMember.name} />
         </div>
       </div>
     </div>

@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "title": "LAUNCH VEHICLE",
+      "name": "HELLODIVERS EXTRACTOR",
+      "description": "Le vaisseau de transport Helldivers, un hybride entre avion et hélicoptère, est conçu pour des missions de déploiement rapide. Équipé de technologies avancées, il assure une insertion précise et sécurisée des troupes. Sa conception robuste et ses capacités de vol stationnaire en font un atout inestimable sur le champ de bataille. Doté de systèmes de défense intégrés.",
+      "image_path": "/img/techno/ship.jpg"
+    },
+    {
+      "id": 2,
+      "title": "MOBILE VEHICLE",
+      "name": "WRAITH JEEP",
+      "description": "Le Wraith Jeep est un véhicule de reconnaissance rapide de l’UNSC. Ce tout-terrain armé de lourdes mitrailleuses et de mines est parfait pour attaquer les lignes ennemies et mener des frappes éclair. Sa vitesse et son agilité en font un choix idéal pour les missions en territoire hostile.",
+      "image_path": "/img/techno/jeep.jpg"
+    },
+    {
+      "id": 3,
+      "title": "DEFENSE VEHICLE",
+      "name": "ADEPTA SORORITAS RHINO",
+      "description": "Le Rhino est un véhicule blindé léger de l'Adeptus Sororitas. Conçu pour transporter des troupes et leur fournir un abri, il est équipé de canons lourds et de lance-flammes pour repousser les ennemis. Il incarne la foi et la puissance martiale de l’Empereur.",
+      "image_path": "/img/techno/rhino.webp"
+    }
+  ]
+  

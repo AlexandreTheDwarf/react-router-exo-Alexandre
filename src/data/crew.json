@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "COMMANDER",
+        "name": "MASTER CHIEF",
+        "description": "John-117, mieux connu sous le nom de Master Chief, est un super-soldat Spartan-II de l'UNSC. Héros légendaire de l'humanité, il a affronté le Covenant, le Parasite et d'innombrables menaces avec un calme inébranlable.",
+        "image_path": "/img/crew/masterchief.webp"
+    },
+    {
+        "id": 2,
+        "title": "MEDIC",
+        "name": "SAINTE CÉLESTINE",
+        "description": "Sainte Célestine est une figure sacrée de l'Adepta Sororitas, guidée par la lumière de l'Empereur. Par sa foi et ses miracles, elle soigne les blessés et inspire ses alliés à accomplir l'impossible.",
+        "image_path": "/img/crew/celestine.webp"
+    },
+    {
+        "id": 3,
+        "title": "PSYKER",
+        "name": "MAGNUS LE ROUGE",
+        "description": "Primarque des Thousand Sons, Magnus est un psyker d'une puissance inégalée. Maître des arcanes et de la connaissance interdite, il manipule la réalité elle-même à travers ses dons.",
+        "image_path": "/img/crew/magnus.webp"
+    },
+    {
+        "id": 4,
+        "title": "TACTICAL OFFICER",
+        "name": "CAPITAINE BUTCHER",
+        "description": "Héros de la Super-Terre, vétéran de mille batailles, le Capitaine Butcher mène ses hommes avec un sens du devoir inébranlable. Armé de sa détermination et de son amour pour la démocratie, il n'hésite jamais à se sacrifier pour l'éradication des ennemis de la liberté.",
+        "image_path": "/img/crew/butcher.webp"
+    }
+]
