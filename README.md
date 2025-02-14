@@ -48,6 +48,10 @@ Une fois l'application lancée, vous pouvez naviguer entre les différentes page
 - **Vite** : Outil de construction front-end rapide.
 - **React Router** : Bibliothèque pour gérer le routage dans les applications React.
 
+## Deployement 
+
+Vous pouvez voir le site deployé sur vercel [ici](https://react-router-exo-alexandre.vercel.app/)
+
 ## Auteur
 
 - **Alexandre** - Étudiant à Molengeek
